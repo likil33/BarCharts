@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uwf-hp-tiZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChartSamplesSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9jD-Zd-TmW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Bar ChartsVC1-->
+        <scene sceneID="UBO-N2-fbE">
+            <objects>
+                <viewController storyboardIdentifier="BarChartsVC1" id="kVZ-tv-Zsr" customClass="BarChartsVC1" customModule="ChartSamplesSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ybn-Mg-WrT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzc-4H-rUw" customClass="BarChartView" customModule="DGCharts">
+                                <rect key="frame" x="10" y="276" width="373" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Xg1-eb-lcf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m5A-cK-RrZ"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yzc-4H-rUw" firstAttribute="leading" secondItem="m5A-cK-RrZ" secondAttribute="leading" constant="10" id="4FX-m3-GSg"/>
+                            <constraint firstItem="yzc-4H-rUw" firstAttribute="centerY" secondItem="ybn-Mg-WrT" secondAttribute="centerY" id="WkG-w6-v2G"/>
+                            <constraint firstItem="m5A-cK-RrZ" firstAttribute="trailing" secondItem="yzc-4H-rUw" secondAttribute="trailing" constant="10" id="dlJ-sj-b7m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="yzc-4H-rUw" id="ox9-su-kpM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ul-0b-3A5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="62"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PIW-su-UML">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uwf-hp-tiZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYg-qU-wKX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ggB-zu-7hY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikq-2U-6gR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+        <!--Bar ChartsVC2-->
+        <scene sceneID="1z6-Pn-FUz">
+            <objects>
+                <viewController storyboardIdentifier="BarChartsVC2" id="kWs-mm-rQh" customClass="BarChartsVC2" customModule="ChartSamplesSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q4Z-x5-DjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-K6-4Qc">
+                                <rect key="frame" x="10" y="76" width="373" height="700"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFD-lu-rI5" customClass="BarChartView" customModule="DGCharts">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="GHw-82-qfK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3s-MX-eJx" customClass="BarChartView" customModule="DGCharts">
+                                        <rect key="frame" x="0.0" y="400" width="373" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="ckd-bY-3d7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a0U-7M-Neo"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dhz-K6-4Qc" firstAttribute="centerY" secondItem="Q4Z-x5-DjZ" secondAttribute="centerY" id="GW9-NZ-T0b"/>
+                            <constraint firstItem="a0U-7M-Neo" firstAttribute="trailing" secondItem="dhz-K6-4Qc" secondAttribute="trailing" constant="10" id="Jwm-qb-4RL"/>
+                            <constraint firstItem="dhz-K6-4Qc" firstAttribute="leading" secondItem="a0U-7M-Neo" secondAttribute="leading" constant="10" id="bYL-iD-s2q"/>
+                            <constraint firstItem="dhz-K6-4Qc" firstAttribute="centerX" secondItem="Q4Z-x5-DjZ" secondAttribute="centerX" id="ofw-V6-KW7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartView" destination="dFD-lu-rI5" id="S9s-Qz-jfB"/>
+                        <outlet property="barChartView1" destination="k3s-MX-eJx" id="MCx-8S-OEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oil-Uq-5xK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="51"/>
+        </scene>
+        <!--Bar Charts3-->
+        <scene sceneID="l7i-dS-E4z">
+            <objects>
+                <viewController storyboardIdentifier="BarCharts3" id="KNJ-0g-khN" customClass="BarCharts3" customModule="ChartSamplesSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ca-td-b6s">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OfO-BF-8W7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QlC-Uv-teV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3007" y="36"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

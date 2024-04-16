@@ -1,0 +1,6 @@
+framework module Pods_ChartSamplesSwift {
+  umbrella header "Pods-ChartSamplesSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
