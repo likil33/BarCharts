@@ -82,7 +82,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return tableView
     }()
     
-    var sectionData: [[String]] = [["BarChartsVC1","BarChartsVC2","BarCharts3"], ["Row 1", "Row 2"], ["Row 1", "Row 2", "Row 3", "Row 4"]]
+    var sectionData: [[String]] = [["BarChartsVC0","BarChartsVC1","BarChartsVC2","BarCharts3"], ["Row 1", "Row 2"], ["Row 1", "Row 2", "Row 3", "Row 4"]]
     var sectionTitles = ["Bar Charts", "Section 2", "Section 3"]
     var sectionCollapsed = [Bool](repeating: true, count: 3) // All sections are initially collapsed
     var expandedSection: Int? // Keep track of the currently expanded section

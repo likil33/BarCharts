@@ -16,6 +16,8 @@
 		75644AD82BC2B3910086A3AA /* BarChartsVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75644AD72BC2B3910086A3AA /* BarChartsVC1.swift */; };
 		75644ADA2BC2DE4F0086A3AA /* BarChartsVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75644AD92BC2DE4F0086A3AA /* BarChartsVC2.swift */; };
 		756DA45F2BCE5D7B00A6F429 /* BarCharts3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DA45E2BCE5D7B00A6F429 /* BarCharts3.swift */; };
+		756DCDC22BCFC3BC000C3EDB /* BarChartsVC0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DCDC12BCFC3BC000C3EDB /* BarChartsVC0.swift */; };
+		756DCDC42BCFC4DE000C3EDB /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756DCDC32BCFC4DE000C3EDB /* BarChartView.swift */; };
 		BD8F355508E3804829D0CD59 /* Pods_ChartSamplesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6273D76B74D415F29E0C2BF /* Pods_ChartSamplesSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		75644AD72BC2B3910086A3AA /* BarChartsVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsVC1.swift; sourceTree = "<group>"; };
 		75644AD92BC2DE4F0086A3AA /* BarChartsVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsVC2.swift; sourceTree = "<group>"; };
 		756DA45E2BCE5D7B00A6F429 /* BarCharts3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCharts3.swift; sourceTree = "<group>"; };
+		756DCDC12BCFC3BC000C3EDB /* BarChartsVC0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsVC0.swift; sourceTree = "<group>"; };
+		756DCDC32BCFC4DE000C3EDB /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		770F8D65B18DEBE586CEEF67 /* Pods-ChartSamplesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartSamplesSwift.debug.xcconfig"; path = "Target Support Files/Pods-ChartSamplesSwift/Pods-ChartSamplesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		E6273D76B74D415F29E0C2BF /* Pods_ChartSamplesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartSamplesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -93,11 +97,21 @@
 		75644AD62BC2B3800086A3AA /* BarCharts */ = {
 			isa = PBXGroup;
 			children = (
+				756DCDC52BCFC4E3000C3EDB /* BarChartVW */,
 				75644AD72BC2B3910086A3AA /* BarChartsVC1.swift */,
 				75644AD92BC2DE4F0086A3AA /* BarChartsVC2.swift */,
 				756DA45E2BCE5D7B00A6F429 /* BarCharts3.swift */,
 			);
 			path = BarCharts;
+			sourceTree = "<group>";
+		};
+		756DCDC52BCFC4E3000C3EDB /* BarChartVW */ = {
+			isa = PBXGroup;
+			children = (
+				756DCDC32BCFC4DE000C3EDB /* BarChartView.swift */,
+				756DCDC12BCFC3BC000C3EDB /* BarChartsVC0.swift */,
+			);
+			path = BarChartVW;
 			sourceTree = "<group>";
 		};
 		AE7DB23446B4D0FFDDFC6754 /* Frameworks */ = {
@@ -225,10 +239,12 @@
 			files = (
 				75644AC72BC2B2B40086A3AA /* ViewController.swift in Sources */,
 				75644AD82BC2B3910086A3AA /* BarChartsVC1.swift in Sources */,
+				756DCDC22BCFC3BC000C3EDB /* BarChartsVC0.swift in Sources */,
 				75644AC32BC2B2B40086A3AA /* AppDelegate.swift in Sources */,
 				75644AC52BC2B2B40086A3AA /* SceneDelegate.swift in Sources */,
 				756DA45F2BCE5D7B00A6F429 /* BarCharts3.swift in Sources */,
 				75644ADA2BC2DE4F0086A3AA /* BarChartsVC2.swift in Sources */,
+				756DCDC42BCFC4DE000C3EDB /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

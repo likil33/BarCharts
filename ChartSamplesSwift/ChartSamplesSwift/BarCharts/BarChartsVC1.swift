@@ -14,8 +14,8 @@ class BarChartsVC1: UIViewController, ChartViewDelegate {
     
     var indexV = Int()
     
-    let players = ["One", "two","three"]
-    let goals:[Double] = [10, 5, 33]
+    let players = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"]
+    let goals:[Double] = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0]
     var colors = [UIColor.orange, UIColor.yellow, UIColor.blue]
 
     override func viewDidLoad() {

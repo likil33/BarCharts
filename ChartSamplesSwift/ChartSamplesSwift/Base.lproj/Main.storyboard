@@ -23,7 +23,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="738" y="130"/>
+        </scene>
+        <!--Bar ChartsVC0-->
+        <scene sceneID="vm5-W6-1hT">
+            <objects>
+                <viewController storyboardIdentifier="BarChartsVC0" id="19A-G9-Wud" customClass="BarChartsVC0" customModule="ChartSamplesSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYm-mM-YAx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dir-HD-lex">
+                                <rect key="frame" x="36" y="217" width="321" height="418"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="321" id="4Df-WF-73b"/>
+                                    <constraint firstAttribute="height" constant="418" id="CV3-cK-Vwp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CVO-XT-k3B"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dir-HD-lex" firstAttribute="centerY" secondItem="DYm-mM-YAx" secondAttribute="centerY" id="DLr-ck-mD8"/>
+                            <constraint firstItem="dir-HD-lex" firstAttribute="centerX" secondItem="DYm-mM-YAx" secondAttribute="centerX" id="HVp-3X-11B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barChartVW" destination="dir-HD-lex" id="m43-l4-kA1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSS-zn-HE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316.793893129771" y="905.63380281690149"/>
         </scene>
         <!--Bar ChartsVC1-->
         <scene sceneID="UBO-N2-fbE">
@@ -139,7 +171,7 @@
     </scenes>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

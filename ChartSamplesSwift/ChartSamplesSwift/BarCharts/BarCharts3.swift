@@ -13,10 +13,10 @@ class BarCharts3: UIViewController {
         super.viewDidLoad()
 
         let roundedBarChartView = RoundedBarChartView(frame: CGRect(x: 50, y: 50, width: 300, height: 300))
-        roundedBarChartView.values = [0.2, 0.5, 0.7] // Example data
-        roundedBarChartView.labels = ["Medium", "Low", "High",] // Example labels
+        roundedBarChartView.values = [0.1, 0.4, 0.6, 3.0, 2.0, 1.0] // Example data
+        roundedBarChartView.labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"] // Example labels
         //roundedBarChartView.barShadowColor = .gray // Set the shadow color
-        roundedBarChartView.colors = [.red, .green, .blue] // Example custom colors
+        roundedBarChartView.colors = [.red, .yellow, .blue,.red, .yellow, .blue] // Example custom colors
         view.addSubview(roundedBarChartView)
     }
     
